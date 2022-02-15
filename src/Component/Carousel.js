@@ -5,8 +5,12 @@ export default class Carousel extends Component {
 
   componentDidMount(){
     a()
-    b()
-    c()
+
+    setTimeout(()=>{
+        b()
+        c()
+    },4000)
+    
   }
 
 
