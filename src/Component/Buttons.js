@@ -125,7 +125,7 @@ export function b(){
        }
       
     },
-    2000)
+    4000)
 }
 
 export function c(){
@@ -247,6 +247,6 @@ export function c(){
        }
       
     },
-    2000)
+    4000)
 
 }
