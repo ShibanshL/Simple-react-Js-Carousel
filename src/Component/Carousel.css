@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    transition: 0.5s ease;
+}
+
+.Carousel_main{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow:hidden;
+
+    /* background: blue; */
+}
+.Carousel_main .carousel_sub{
+    height: 100%;
+    width:100%;
+    display:grid ;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 100%;
+    grid-template-areas: 'Images'
+                        'Nav_mark';
+    overflow:hidden;
+    
+    /* position: relative; */
+}
+.carousel_sub .Images{
+    grid-area: Images;
+    height: 100%;
+    width:500vw;
+    min-width: 500vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'I1 I2 I3 I4 I5';
+    position: absolute;
+    overflow-x: hidden;
+    /* background: yellow; */
+}
+.Images .I1{
+    grid-area: I1;
+    height: 100%;
+    width:100%;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Images .I2{
+    grid-area: I2;
+    height: 100%;
+    width:100%;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Images .I3{
+    grid-area: I3;
+    height: 100%;
+    width:100%;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Images .I4{
+    grid-area: I4;
+    height: 100%;
+    width:100%;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Images .I5{
+    grid-area: I5;
+    height: 100%;
+    width:100%;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.I1 img, .I2 img, .I3 img, .I4 img, .I5 img{
+    width: 60%;
+}
+.Button{
+    grid-area:Nav_mark;
+    height: 10%;
+    width:40%;
+    overflow: hidden;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 30vw;
+    position: absolute;
+    bottom: -10px;
+}
+.Button .B1{
+    height: 8px;
+    width:18px;
+    border-radius: 25px;
+    background: rgba(0,0,0,1);
+    cursor: pointer;
+}
+.Button .B2, .Button .B3, .Button .B4, .Button .B5{
+    height: 8px;
+    width:8px;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+.Carousel_main .Nav{
+    height:10%;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    /* background-color: pink; */
+    left:10%;
+    top:50%;
+    z-index: 10;
+}
+.Nav .left{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items:left;
+    justify-content: left;
+}
+.Nav .right{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items:right;
+    justify-content: right;
+}
+
+.Nav .left img, .Nav .right img{
+    background: white;
+    border-radius: 50%;
+    height: 10vh;
+}
+.Nav .right img{
+    transform: rotate(180deg);
+}
